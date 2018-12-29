@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/Hedding">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/grad" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="28dp"
+            android:text="Add new Kyc"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/f1"
+        android:layout_below="@+id/Hedding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPersontype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="40dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextPersonType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kyc Type"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutkyc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayoutPersontype"
+            android:layout_margin="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextKyc_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kyc Name"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutkyc_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayoutkyc_name"
+            android:layout_margin="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextkyc_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kyc Details"
+                android:inputType="text"
+                android:maxLines="3"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutkyc_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayoutkyc_details"
+            android:layout_margin="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextKyc_number"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kyc Number"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoukycfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayoutkyc_number"
+            android:layout_margin="16dp">
+
+             <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditTexDocumentFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Document Image File Name"
+            android:inputType="text"
+            android:enabled="false"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/Capture_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textInputLayoukycfileName"
+            android:hint="Take Photo of Document"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/submit"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayoukycfileName"
+            android:layout_centerHorizontal="true"
+            android:hint="Submit" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

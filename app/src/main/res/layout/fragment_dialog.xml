@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/colorTextHint"/>
+ <LinearLayout
+
+      android:orientation="vertical"
+      android:padding="12dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+            <EditText
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/frg_first_name"
+                android:inputType="text" />
+             <EditText
+                 android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/frg_last_name"
+                android:inputType="text" />
+
+            <EditText
+                android:textStyle="bold"
+                android:enabled="false"
+                android:layout_marginTop="8dp"
+                android:id="@+id/inEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/frg_email_address"
+                android:inputType="textEmailAddress" />
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frg_save" />
+  </LinearLayout>
+</LinearLayout>

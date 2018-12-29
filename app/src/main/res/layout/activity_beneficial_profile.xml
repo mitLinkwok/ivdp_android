@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+android:id="@+id/LayOut_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <android.support.constraint.ConstraintLayout
+           android:layout_width="match_parent"
+           android:background="@drawable/grad"
+           android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/ProfileImage"
+               android:layout_width="233dp"
+               android:layout_height="234dp"
+               android:layout_margin="8dp"
+               android:background="@drawable/circle_profileimage"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.497"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0"
+               tools:ignore="ContentDescription" />
+            <ImageButton
+               android:id="@+id/takeimage"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_marginStart="8dp"
+               android:layout_marginLeft="8dp"
+                android:background="@drawable/circle"
+               android:src="@android:drawable/ic_menu_camera"
+               app:layout_constraintBottom_toBottomOf="@+id/ProfileImage"
+               app:layout_constraintEnd_toEndOf="@+id/ProfileImage"
+               app:layout_constraintHorizontal_bias="0.675"
+               app:layout_constraintStart_toEndOf="@+id/ProfileImage"
+               app:layout_constraintTop_toTopOf="@+id/ProfileImage"
+               app:layout_constraintVertical_bias="0.804"
+               tools:ignore="ContentDescription" />
+
+           <ImageButton
+               android:id="@+id/EditProfile"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginEnd="8dp"
+               android:layout_marginRight="8dp"
+               android:background="@drawable/circle"
+               app:layout_constraintBottom_toBottomOf="@+id/Save_profile_Data"
+               app:layout_constraintEnd_toStartOf="@+id/Save_profile_Data"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toEndOf="@+id/ProfileImage"
+               app:layout_constraintTop_toTopOf="@+id/Save_profile_Data"
+               app:layout_constraintVertical_bias="0.0"
+               app:srcCompat="@android:drawable/ic_menu_edit"
+               tools:ignore="ContentDescription" />
+
+           <ImageButton
+               android:id="@+id/Save_profile_Data"
+               android:layout_width="36dp"
+               android:layout_height="32dp"
+
+               android:layout_marginEnd="104dp"
+               android:layout_marginRight="104dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="@+id/ProfileImage"
+               app:layout_constraintVertical_bias="0.004"
+               app:srcCompat="@android:drawable/ic_menu_save" />
+       </android.support.constraint.ConstraintLayout>
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/screollView"
+        android:layout_below="@+id/LayOut_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/f1"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="40dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/textInputLayoutName"
+                android:id="@+id/textInputLayoutcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Beneficialy Code"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/textInputLayoutcode"
+                android:id="@+id/textInputLayoutgender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gender"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/textInputLayoutgender"
+                android:id="@+id/textInputLayoutBOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextBOD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Birth Date"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/textInputLayoutBOD"
+                android:id="@+id/textInputLayoutcontact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTexContectNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contect Number"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/textInputLayoutcontact_number"
+                android:id="@+id/textInputLfamily_head_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextFamily_had"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Family Had Id"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/textInputLfamily_head_id"
+                android:id="@+id/textInputLhousehold_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextHouse_hold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="House Hold Id "
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/textInputLhousehold_id"
+                android:id="@+id/textInputage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Age"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/textInputage"
+                android:id="@+id/textInputwhatsapp_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Whatsapp_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="WhatsApp Number"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/Kyc_profile_Data"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:elevation="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/circular_textview_drawable"
+        android:text="Kyc Details"
+        android:textAlignment="center" />
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

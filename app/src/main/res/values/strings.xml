@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">IVDP</string>
+    <string name="text_login">Login</string>
+    <string name="text_not_member">notrememberpassword</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+
+
+    <string name="hint_currentpassword"> Current Password</string>
+    <string name="hint_newpassword"> New Password</string>
+    <string name="hint_ConfroemPassword">Confrm Password</string>
+    <string name="text_save">Save</string>
+
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="text_title">Welcome</string>
+    <string name="text_hello">hello</string>
+    <string name="text_accounts">account</string>
+    <string name="Changpassword">chang Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Changpwd">Chang Password for </string>
+    <string name="error_update_password">error_In_update_password</string>
+    <string name="Logout">Logout</string>
+    <string name="frg_first_name">first_name</string>
+    <string name="frg_last_name">last_name</string>
+    <string name="frg_email_address">Email Address</string>
+    <string name="frg_save">save</string>
+    <string name="Banificials">Beneficiaries</string>
+    <string name="vrification_string">You\'hav successfully complited our verification process</string>
+    <string name="thanks_slogan">Thanks of trust on us</string>
+    <string name="desc">desc</string>
+    <string name="kyc_person_type">kyc Person Type</string>
+    <string name="kyc_name">Kyc Name</string>
+    <string name="kyc_detail">Kyc Detail</string>
+    <string name="kyc_number">Kyc Number</string>
+    <string name="kyc_file">Kyc File</string>
+    <string name="no_Kyc_Doc">no_kyc_Doc</string>
+
+</resources>
